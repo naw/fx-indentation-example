@@ -21,9 +21,9 @@ ActiveRecord::Schema.define(version: 20180403150310) do
        RETURNS integer
        LANGUAGE plpgsql
       AS $function$
-      BEGIN
-        return num * num;
-      END;
-      $function$
+            BEGIN
+              return num * num;
+            END;
+            $function$
   SQL
 end
