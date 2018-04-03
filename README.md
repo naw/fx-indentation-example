@@ -16,6 +16,10 @@ Then whenever the schema is dumped again, such as after running `db:migrate` for
 migrations, the function definition will be written to schema.rb with the internal
 spaces as well as the formatting spaces, for a total of 12 spaces:
 
-6. `bundle exec rake db:schema:load db:migrate`
+6. `bundle exec rake db:schema:load db:migrate` ([0a4f9d](https://github.com/naw/fx-indentation-example/commit/0a4f9d9c199b994d387eb2327fd715f5d05cdb40))
 
-7. repeat step 6, each time 6 new spaces are added.
+7. repeat step 6, each time 6 new spaces are added. ([052f76](https://github.com/naw/fx-indentation-example/commit/052f76a8818b566928636a72cab59ba4371f741d))
+
+8. Switch `fx` to my patched version ([459314](https://github.com/naw/fx-indentation-example/commit/459314a79531ac39a524f949d377cb09afe116f5))
+
+9. repeat step 6, each time nothing is added (NO DIFF, because schema.rb does not change)
